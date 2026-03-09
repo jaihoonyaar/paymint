@@ -55,7 +55,7 @@ public class SecurityConfig {
 
         CorsConfiguration config = new CorsConfiguration();
 
-        config.addAllowedOrigin("http://localhost:5173"); // React app
+        config.addAllowedOrigin("https://paymint-one.vercel.app"); // React app
         config.addAllowedMethod("*");
         config.addAllowedHeader("*");
         config.setAllowCredentials(true);
