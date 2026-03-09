@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://paymint-backend-bb44.onrender.com",// your Spring Boot port
+  baseURL: "https://paymint-backend-bb44.onrender.com/api",// your Spring Boot port
 });
 
 // Attach JWT automatically
