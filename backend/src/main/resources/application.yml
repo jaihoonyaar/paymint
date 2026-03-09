@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: ${postgresql://paymint_user:r9pV67ymXF0qG7COBVSZ5YkxKVok36qe@dpg-d6ng51cr85hc73cosjeg-a.oregon-postgres.render.com/paymint}
+    url: ${DATABASE_URL}
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -12,5 +12,5 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
