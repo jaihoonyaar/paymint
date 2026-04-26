@@ -124,4 +124,15 @@ public class CashbackController {
 
         return new ApiResponse(true, "Rule status updated", null);
     }
+
+    @GetMapping("/summary/{merchantId}")
+public ApiResponse<String> getCashbackSummary(@PathVariable Long merchantId) {
+
+    
+    return new ApiResponse<>(
+        true,
+        "Cashback summary fetched",
+        "Total cashback this week: ₹3500"
+    );
+}
 }

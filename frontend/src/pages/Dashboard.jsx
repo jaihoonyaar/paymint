@@ -23,6 +23,7 @@ import {
   Cell,
   Legend
 } from "recharts";
+import ChatBox from "../components/ChatBox";
 
 export default function Dashboard() {
 
@@ -231,8 +232,7 @@ export default function Dashboard() {
 
       </div>
 
-      
-
+      <ChatBox />
     </div>
   );
 }
